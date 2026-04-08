@@ -76,7 +76,7 @@ button {
 
     <!-- Quiz content -->
     <div id="quizPage" style="display:none;">
-        <div id="questionNum">Question 1 / 30</div>
+        <div id="questionNum">Question 1 / 25</div>
         <div class="grid" id="grid"></div>
         <div id="btnRow">
             <button id="prevBtn" onclick="prevQuestion()">Previous</button>
@@ -88,37 +88,31 @@ button {
 <script>
 // --- QUESTIONS ---
 let questions = [
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" },
-    { a: 52, b: 13, c: 22, answer: "39" }
+    {"a":12,"b":25,"c":46,"answer":83},
+    {"a":8,"b":30,"c":54,"answer":92},
+    {"a":17,"b":23,"c":26,"answer":66},
+    {"a":26,"b":6,"c":33,"answer":65},
+    {"a":5,"b":12,"c":28,"answer":45},
+    {"a":25,"b":25,"c":31,"answer":81},
+    {"a":19,"b":22,"c":33,"answer":74},
+    {"a":28,"b":32,"c":25,"answer":85},
+    {"a":47,"b":13,"c":5,"answer":65},
+    {"a":82,"b":5,"c":8,"answer":95},
+    {"a":11,"b":40,"c":32,"answer":83},
+    {"a":54,"b":21,"c":14,"answer":89},
+    {"a":14,"b":16,"c":26,"answer":56},
+    {"a":45,"b":20,"c":16,"answer":81},
+    {"a":9,"b":16,"c":27,"answer":52},
+    {"a":22,"b":39,"c":6,"answer":67},
+    {"a":5,"b":4,"c":18,"answer":27},
+    {"a":9,"b":8,"c":11,"answer":28},
+    {"a":53,"b":22,"c":18,"answer":93},
+    {"a":42,"b":22,"c":9,"answer":73},
+    {"a":72,"b":6,"c":3,"answer":81},
+    {"a":16,"b":13,"c":17,"answer":46},
+    {"a":37,"b":28,"c":14,"answer":79},
+    {"a":30,"b":40,"c":20,"answer":90},
+    {"a":32,"b":21,"c":8,"answer":61}
 ];
 
 let current = 0;
