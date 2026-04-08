@@ -16,6 +16,7 @@ body {
     margin: auto;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .grid {
     display: grid;
@@ -83,7 +84,7 @@ button {
             <button id="nextBtn" onclick="nextQuestion()">Next</button>
         </div>
     </div>
-</div>
+</div> 
 
 <script>
 // --- QUESTIONS ---
@@ -138,7 +139,7 @@ function startQuiz(){
 // --- LOAD QUESTION ---
 function loadQuestion(){
     let q = questions[current];
-    let aStr = q.a.toString().padStart(2,' ');
+    let aStr = q.a.toString().padStart(2,'0');
     let bStr = q.b.toString().padStart(2,' ');
     let cStr = q.c.toString().padStart(2,' ');
 
@@ -255,7 +256,7 @@ function finishQuiz(){
         })
     }).then(() => {console.log("Data sent to Google Sheets");})
       .catch(err => console.error("Error saving to sheet:", err));
-}
+} 
 </script>
 </body>
 </html>
