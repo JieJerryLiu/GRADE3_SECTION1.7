@@ -144,8 +144,8 @@ function loadQuestion(){
     let cStr = q.c.toString().padStart(2,' ');
 
     document.getElementById("grid").innerHTML = `
-        <div></div>
-        <div>${aStr[0]}</div>
+        <div></div> 
+        <div>${aStr[0]===" "? "" : aStr[0]}</div>
         <div>${aStr[1]}</div>
         <div></div>
         <div>${bStr[0]===" "? "" : bStr[0]}</div>
